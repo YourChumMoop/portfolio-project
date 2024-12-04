@@ -1,0 +1,129 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+#navbar {
+  z-index: 1;
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  padding: 0%;
+  width: 100%;
+
+}
+#navbar h1 {
+  margin: 5px 0px 5px 0px;
+}
+#navbar ul{
+  justify-content: space-evenly;
+  top: 0;
+  text-align: center;
+  display: flex;
+}
+#navbar li{
+  list-style-type: none;
+}
+.project-container{
+  margin: 30px;
+  height: 200px;
+  width: 300px;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: black;
+}
+@keyframes highlighter {
+  from {
+    filter: opacity(50%);
+  }
+  to {
+    filter: opacity(100%);
+  }
+}
+@keyframes scalar {
+  from {
+    transform: scale(1,1);
+  }
+  to {
+    transform: scale(0.9,0.9);
+  }
+}
+.project-container img{
+  position: relative;
+  top:-16px;
+  filter: opacity(50%);
+}
+.project-container:hover { animation: scalar 0.3s forwards;}
+.project-container img:hover{
+  animation: highlighter 0.3s forwards;
+}
+.project-container h3 {
+  margin: 10px;
+  z-index: 1;
+  color: black;
+  position: absolute;
+}
+@keyframes popdown {
+  from{
+    transform: translateY(-120px);
+  }
+  to{
+    transform: translateY(80px);
+  }
+}
+.pfp {
+  position: fixed;
+  left:0;
+  top: 0px;
+  width: 500px;
+  border-radius: 0px 0px 50px 0px;
+  animation: popdown 1s ease-in-out forwards;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+footer {
+  width: 100%;
+  background-color: beige;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+footer a{
+  padding-left: 20%;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
