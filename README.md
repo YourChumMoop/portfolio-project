@@ -6,4 +6,6 @@ This is a portfolio built using react, with structure in place to add on new pro
 This is the basis for future developments, with fleshed out Resume and Contact pages in the future. Other features will include additional CSS to flesh out the feel of the site, and replacing proxy project files with actual project objects.
 
 ## Screenshot and Link
-[DEPLOYED APP LINK]
+[DEPLOYED APP LINK](https://bright-cupcake-ebc0ae.netlify.app/)
+
+![Screenshot](./src/assets/portfolioCapture.PNG)
